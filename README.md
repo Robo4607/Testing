@@ -32,3 +32,5 @@ There is more to Github that we will want to learn but these are the basics to g
 
 If you have any questions just edit this file and add them below.
   
+  Check in here:
+  Penchant has read this and successfully cloned his branch as well as pushed to his branch.
