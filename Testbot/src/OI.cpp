@@ -30,9 +30,9 @@ OI::OI() {
 	
 	cMotor = new JoystickButton(driver, 1);
 	cMotor->WhileHeld(new TestcMotor());
-	bMotor = new JoystickButton(driver, 1);
+	bMotor = new JoystickButton(driver, 2);
 	bMotor->WhileHeld(new TestbMotor());
-	aMotor = new JoystickButton(driver, 1);
+	aMotor = new JoystickButton(driver, 3);
 	aMotor->WhileHeld(new TestaMotor());
      
 
