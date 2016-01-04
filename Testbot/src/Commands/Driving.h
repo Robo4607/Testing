@@ -12,7 +12,7 @@
 #ifndef DRIVING_H
 #define DRIVING_H
 
-
+#include "WPILib.h"
 #include "Commands/Subsystem.h"
 #include "../Robot.h"
 
