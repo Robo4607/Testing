@@ -26,7 +26,8 @@ void Driving::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void Driving::Execute() {
-	Robot::drivetrain->ArcadeDrive(Robot::oi->getdriver());
+	// Robot::drivetrain->kwArcadeDrive(Robot::oi->getdriver());
+	Robot::drivetrain->TestaMotor(.25);
 }
 
 // Make this return true when this Command no longer needs to run execute()
