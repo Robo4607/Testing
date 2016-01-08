@@ -8,7 +8,7 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in the future.
 
-
+#include "../OI.h"
 #include "TestaMotor.h"
 
 TestaMotor::TestaMotor() {
@@ -34,11 +34,11 @@ bool TestaMotor::IsFinished() {
 
 // Called once after isFinished returns true
 void TestaMotor::End() {
-	
+	Robot::drivetrain->TestaMotor(0);
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void TestaMotor::Interrupted() {
-
+	End();
 }
