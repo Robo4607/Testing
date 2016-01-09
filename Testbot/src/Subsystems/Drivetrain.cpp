@@ -39,8 +39,8 @@ void Drivetrain::ArcadeDrive(Joystick* joy) {
 	 //kw->ArcadeDrive(joy->GetY(), joy->GetRawAxis(4));
 }
 void Drivetrain::kdArcadeDrive(Joystick* joy) {
-	aMotor->Set(joy->GetY()+sqrt(2)*joy->GetX()+.25*joy->GetRawAxis(4));
-	bMotor->Set(joy->GetY()+sqrt(2)*joy->GetX()+.25*joy->GetRawAxis(4));
+	aMotor->Set(joy->GetY()+joy->GetX()/sqrt(2)+.25*joy->GetRawAxis(4));
+	bMotor->Set(-1*joy->GetY()+joy->GetX()/sqrt(2)+.25*joy->GetRawAxis(4));
 	cMotor->Set(-1*joy->GetX()+.25*joy->GetRawAxis(4));
 }
 void Drivetrain::TestaMotor(float aspeed){

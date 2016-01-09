@@ -26,13 +26,15 @@ void RobotMap::init() {
 	LiveWindow* lw = LiveWindow::GetInstance();
 
 	drivetrainaMotor = new CANTalon(0);
-
+	lw->AddActuator("Drivetrain","aMotor", drivetrainaMotor);
 	drivetrainbMotor = new CANTalon(1);
-	
+	lw->AddActuator("Drivetrain","bMotor", drivetrainbMotor);
 	drivetraincMotor = new CANTalon(2);
-	
-	pneumaticstestsolenoid = new Solenoid(1,1);
-	pneumaticstest2solenoid = new Solenoid(1,2);
+	lw->AddActuator("Drivetrain","cMotor", drivetraincMotor);
+	pneumaticstestsolenoid = new Solenoid(1);
+	lw->AddActuator("Pneumatics","Solenoid 1", pneumaticstestsolenoid);
+	pneumaticstest2solenoid = new Solenoid(2);
+	lw->AddActuator("Pneumatics","Solenoid 2", pneumaticstest2solenoid);
 
 
 
